@@ -1,0 +1,13 @@
+area	item	status	max_abs_numeric_difference	detail
+HECA assignment/timing	heca_assignment_summary.csv	EXACT_BYTE_MATCH		Isolated historical script output compared bytewise.
+HECA assignment/timing	heca_assignment_quality_summary.csv	EXACT_BYTE_MATCH		Isolated historical script output compared bytewise.
+HECA assignment/timing	rif_heca_celltype_timing_scores.csv	EXACT_BYTE_MATCH		Isolated historical script output compared bytewise.
+HECA assignment/timing	endo179640_heca_celltype_timing_scores.csv	EXACT_BYTE_MATCH		Isolated historical script output compared bytewise.
+HECA assignment/timing	endo213216_heca_celltype_timing_scores.csv	EXACT_BYTE_MATCH		Isolated historical script output compared bytewise.
+HECA assignment/timing	endo214411_heca_celltype_timing_scores.csv	EXACT_BYTE_MATCH		Isolated historical script output compared bytewise.
+HECA inference	heca_key_celltype_shift_summary.csv	PARTIAL_ESTIMATES_EXACT_CI_RANDOM	0.15716873206075	Unseeded bootstrap/permutation in historical script makes CI/p values non-deterministic; no method or seed was changed.
+Threshold sensitivity	heca_assignment_threshold_sensitivity.csv	EXACT_BYTE_MATCH		Historical threshold grid output compared bytewise.
+Covariate models	heca_assignment_covariate_models.csv	EXACT_WITHIN_1E-8	0	All historical coefficient fields compared after matching model and term.
+Non-endometriosis sensitivity	formal current vs historical	EXACT_BYTE_MATCH		Current formal CSV is byte-identical to the historical output.
+Non-endometriosis sensitivity	isolated vs historical	PARTIAL_ESTIMATES_EXACT_CI_RANDOM	0.18924338819031	Point estimates and delta reproduce; four CI columns vary because bootstrap_random is unseeded in the historical script.
+Assignment correlation	summary/quality row counts	EXACT_SOURCE_OUTPUTS		assignment_summary_rows=119; quality_rows=4

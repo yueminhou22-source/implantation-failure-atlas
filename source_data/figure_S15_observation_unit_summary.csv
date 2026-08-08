@@ -1,0 +1,13 @@
+dataset,disease,original_data_type,original_inference_unit,plot_unit,included_in_S15,n_observations
+GSE111974,RIF,Bulk transcriptomics,bulk sample,bulk sample,TRUE,24
+GSE135485,Endometriosis,Bulk transcriptomics,bulk sample,bulk sample,TRUE,54
+GSE157718,Adenomyosis,Stromal transcriptomics,bulk sample,bulk sample,TRUE,3
+GSE179640,Endometriosis,Single-cell-derived pseudobulk,scRNA pseudobulk sample,scRNA pseudobulk sample,TRUE,30
+GSE190580,Adenomyosis,Tissue transcriptomics,bulk sample,bulk sample,TRUE,12
+GSE213216,Endometriosis,Single-cell-derived pseudobulk,scRNA pseudobulk sample,scRNA pseudobulk sample,TRUE,41
+GSE214411,Endometriosis,Single-cell-derived pseudobulk,scRNA pseudobulk sample,scRNA pseudobulk sample,TRUE,6
+GSE244236,Adenomyosis,Organoid transcriptomics,organoid sample,organoid sample,TRUE,30
+GSE263897,Endometriosis,GeoMx spatial transcriptomics,GeoMx ROI,GeoMx ROI,FALSE,60
+GSE287278,RIF,Visium spatial transcriptomics,Visium spot,Visium spot,FALSE,4769
+GSE58144,RIF,Bulk transcriptomics,bulk sample,bulk sample,TRUE,43
+GSE78851,Adenomyosis,Whole-tissue transcriptomics,bulk sample,bulk sample,TRUE,3

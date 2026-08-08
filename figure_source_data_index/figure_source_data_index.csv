@@ -1,0 +1,17 @@
+figure,source_table,description,script
+Figure_3C,source_data/heca_mapping_quality_heatmap_values.csv,Mean HECA assignment correlations by cohort and broad cell state,scripts/rebuild_main_figure_3c.R
+Figure_S16,source_data/canonical_receptivity_overlap_verified.csv,Verified canonical-marker membership against the finalized 3499-gene list,scripts/rebuild_audit_supplementary_figures.R
+Figure_S19,source_data/canonical_receptivity_marker_rankings_verified.csv,Verified marker correlations and membership,scripts/rebuild_audit_supplementary_figures.R
+Figure_S3,source_data/fertile_timeline_negative_controls.csv; source_data/fertile_timeline_negative_control_summary_verified.csv,Negative-control LOOCV distribution and observed rho,scripts/rebuild_audit_supplementary_figures.R
+Figure_S1,source_data/fertile_timeline_loocv_predictions.csv; source_data/fertile_timeline_loocv_metrics.csv,LOOCV fertile-timeline predictions and summary metrics with publication-facing luteal-stage labels,scripts/rebuild_supplementary_cleanup_figures.R
+Figure_S12,source_data/rif_celltype_timing_stats.csv,RIF author-annotated cell-category timing statistics with display-label cleanup,scripts/rebuild_supplementary_cleanup_figures.R
+Figure_S14,source_data/heca_broad_celltype_stage_counts.csv,HECA reference secretory-stage coverage with human-readable stage and state labels,scripts/rebuild_supplementary_cleanup_figures.R
+Figure_S15,source_data/cross_disease_score_table_with_common_axis.csv; source_data/figure_S15_observation_unit_audit.csv; source_data/figure_S15_observation_unit_summary.csv,Cross-disease module-score display restricted to comparable bulk/pseudobulk/organoid analytical observations,scripts/rebuild_supplementary_cleanup_figures.R
+Figure_S13,source_data/rif_heca_celltype_timing_scores.csv; source_data/endo179640_heca_celltype_timing_scores.csv; source_data/endo213216_heca_celltype_timing_scores.csv; source_data/endo214411_heca_celltype_timing_scores.csv,Cross-cohort HECA timing heatmap rebuilt with display-label normalization only,scripts/rebuild_figure_s13_display.R
+Figure_S21,source_data/heca_non_endo_key_shift_comparison.csv,Key-shift sensitivity under full versus non-endometriosis HECA references with a non-clipped title,scripts/rebuild_figure_s21_display.R
+Figure 2,composite,source_data/final_figure_lock/figure2_effect_definition_lock.tsv,scripts/figure2_figure4_formal_lock.py,Hedges g and matching CI
+Figure 2B,sample alignment,source_data/final_figure_lock/figure2_sample_alignment_277_records.tsv,scripts/figure2_figure4_formal_lock.py,277 aligned records
+Figure 4,composite,source_data/final_figure_lock/figure4_heatmap_scale_and_unit_lock.tsv,scripts/figure2_figure4_formal_lock.py,28 descriptive cells; 119 samples; 833 sample-state records
+Figure 2,composite,source_data/final_figure_lock/figure2_effect_definition_lock.tsv,scripts/figure2_figure4_formal_lock.py,Hedges g and matching CI
+Figure 2B,sample alignment,source_data/final_figure_lock/figure2_sample_alignment_277_records.tsv,scripts/figure2_figure4_formal_lock.py,277 aligned records
+Figure 4,composite,source_data/final_figure_lock/figure4_heatmap_scale_and_unit_lock.tsv,scripts/figure2_figure4_formal_lock.py,28 descriptive cells; 119 samples; 833 sample-state records

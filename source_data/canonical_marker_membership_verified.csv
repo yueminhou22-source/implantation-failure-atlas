@@ -1,0 +1,13 @@
+marker,normalized_symbol,in_3499_dynamic,rank_in_dynamic,in_80_signature,signature_direction,source_file,notes,rho,p,padj,rank_all_by_rho
+PAEP,PAEP,TRUE,616,FALSE,NA,fertile_day_spearman_round5.csv,Membership determined by round5 Spearman BH-adjusted P < 0.05.,0.699778679387603,0.00122546757722151,0.0161139234673245,616
+GPX3,GPX3,TRUE,14,TRUE,late,fertile_day_spearman_round5.csv,Membership determined by round5 Spearman BH-adjusted P < 0.05.,0.8651809126974,3.56431090822371e-6,8.5152675902612e-4,14
+MUC1,MUC1,FALSE,NA,FALSE,NA,fertile_day_spearman_round5.csv,"Present in the tested transcriptome but outside the 3,499-gene Spearman/BH dynamic list.",-0.117690050624279,0.641865467758828,0.771787663585581,11373
+IGFBP1,IGFBP1,TRUE,32,TRUE,late,fertile_day_spearman_round5.csv,Membership determined by round5 Spearman BH-adjusted P < 0.05.,0.841472997696227,1.20426148922435e-5,0.00152097459043501,32
+PRL,PRL,FALSE,NA,FALSE,NA,fertile_day_spearman_round5.csv,"Present in the tested transcriptome but outside the 3,499-gene Spearman/BH dynamic list.",0.254464974322765,0.308203920349177,0.493210841465889,6175
+LEFTY2,LEFTY2,FALSE,NA,FALSE,NA,fertile_day_spearman_round5.csv,"Present in the tested transcriptome but outside the 3,499-gene Spearman/BH dynamic list.",0.289453908292145,0.244003604450245,0.42486366988443097,5707
+SPP1,SPP1,TRUE,891,FALSE,NA,fertile_day_spearman_round5.csv,Membership determined by round5 Spearman BH-adjusted P < 0.05.,0.667970557597258,0.0024487113917738,0.0237784026383363,891
+HOXA10,HOXA10,FALSE,NA,FALSE,NA,fertile_day_spearman_round5.csv,"Present in the tested transcriptome but outside the 3,499-gene Spearman/BH dynamic list.",-0.343527715335732,0.162792364365824,0.329254364852093,15025
+HOXA11,HOXA11,FALSE,NA,FALSE,NA,fertile_day_spearman_round5.csv,"Present in the tested transcriptome but outside the 3,499-gene Spearman/BH dynamic list.",-0.36261258840994,0.139175344457912,0.296233137103471,15298
+IL15,IL15,FALSE,NA,FALSE,NA,fertile_day_spearman_round5.csv,"Present in the tested transcriptome but outside the 3,499-gene Spearman/BH dynamic list.",0.337166090977663,0.171235873948978,0.340497006070426,5045
+CXCL14,CXCL14,TRUE,59,FALSE,NA,fertile_day_spearman_round5.csv,Membership determined by round5 Spearman BH-adjusted P < 0.05.,0.823830354369951,2.64096865717607e-5,0.00214621997963709,59
+DPP4,DPP4,TRUE,825,FALSE,NA,fertile_day_spearman_round5.csv,Membership determined by round5 Spearman BH-adjusted P < 0.05.,0.674332181955327,0.00214599619813779,0.022139936843327,825

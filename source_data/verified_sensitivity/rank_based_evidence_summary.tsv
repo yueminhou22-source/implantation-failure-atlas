@@ -1,0 +1,11 @@
+dataset	disease	case_group	control_group	n_case	n_control	rank_score_difference	direction	historical_direction	matched_direction	direction_consistency_class
+GSE111974	RIF	RIF	Control	24	24	-1352.71296921922	negative	negative	negative	confirms main direction
+GSE250130	RIF	RIF	Fertile_LH7	10	6	506.434583333333	positive	positive	positive	confirms main direction
+GSE135485	Endometriosis	patient with endometriosis	healthy control	54	4	743.245496498102	positive	positive	positive	confirms main direction
+GSE179640	Endometriosis	Endo_Eutopic	Control_Eutopic	9	3	-1369.27222222222	negative	negative	negative	confirms main direction
+GSE213216	Endometriosis	Eutopic	Lesion	9	28	-1498.51106150794	negative	negative	negative	confirms main direction
+GSE214411	Endometriosis	endometriosis	Control	6	7	350.003224206349	positive	positive	positive	confirms main direction
+GSE157718	Adenomyosis	Adenomyosis	Control	3	3	-784.001273344652	negative	negative	negative	confirms main direction
+GSE190580	Adenomyosis	Adenomyosis	Control	12	10	997.775962082625	positive	positive	positive	confirms main direction
+GSE244236	Adenomyosis	Adenomyosis	Control	30	27	1500.65334842483	positive	positive	positive	confirms main direction
+GSE78851	Adenomyosis	Adenomyosis	Control	3	5	194.697007722008	positive	positive	positive	confirms main direction

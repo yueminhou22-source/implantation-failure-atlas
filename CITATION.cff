@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these reproducibility materials, please cite the associated manuscript and this release."
+title: "Reproducibility materials for A cross-disease endometrial omics framework maps heterogeneous timing and context-specific molecular remodeling in implantation-associated disorders"
+type: dataset
+repository-code: https://github.com/yueminhou22-source/implantation-failure-atlas
+version: 1.0.0
+date-released: 2026-08-08
+authors:
+  - family-names: Gao
+    given-names: Qing
+  - family-names: Zhang
+    given-names: Tingting
+  - family-names: Liu
+    given-names: Wei
+  - family-names: Ji
+    given-names: Tiantian
+  - family-names: Zou
+    given-names: Dan
+  - family-names: Hou
+    given-names: Yuemin

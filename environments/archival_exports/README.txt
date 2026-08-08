@@ -1,0 +1,1 @@
+Archival environment exports were copied verbatim for provenance. They are not portable installation specifications: the historical pip export contains build-time file URLs, and the historical environment name is sc_radiomics. The portable source-table rebuild specifications are endometrial_atlas_environment.yml and python_minimal_requirements.txt.

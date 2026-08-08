@@ -1,0 +1,111 @@
+absl-py==2.4.0
+aiohappyeyeballs==2.6.2
+aiohttp==3.14.0
+aiosignal==1.4.0
+anndata @ file:///home/conda/feedstock_root/build_artifacts/anndata_1779177147528/work
+annoy==1.17.3
+array-api-compat @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_array-api-compat_1772121558/work
+attrs==26.1.0
+autograd @ file:///home/conda/feedstock_root/build_artifacts/autograd_1746451452558/work
+autograd-gamma @ file:///home/conda/feedstock_root/build_artifacts/autograd-gamma_1734571712221/work
+bbknn==1.6.0
+cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
+contourpy @ file://[local path omitted]
+cycler @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_cycler_1764466758/work
+Cython==3.2.5
+historical exclusion @ file:///home/conda/feedstock_root/build_artifacts/historical exclusion_1768934076236/work
+docopt==0.6.2
+docrep==0.3.2
+donfig @ file:///home/conda/feedstock_root/build_artifacts/donfig_1734368700593/work
+filelock==3.29.1
+fonttools @ file://[local path omitted]
+formulaic @ file:///home/conda/feedstock_root/build_artifacts/formulaic_1780453742147/work
+frozenlist==1.8.0
+fsspec==2026.4.0
+google-crc32c @ file://[local path omitted]
+grpcio==1.81.0
+h5py @ file://[local path omitted]
+harmonypy==2.0.0
+idna==3.18
+igraph @ file://[local path omitted]
+interface_meta @ file:///home/conda/feedstock_root/build_artifacts/interface_meta_1734284382083/work
+Jinja2==3.1.6
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1765794027227/work
+kiwisolver @ file://[local path omitted]
+legacy-api-wrap @ file:///home/conda/feedstock_root/build_artifacts/legacy-api-wrap_1762187530570/work
+leidenalg @ file://[local path omitted]
+lifelines @ file:///home/conda/feedstock_root/build_artifacts/lifelines_1777473677070/work
+lightning==2.6.5
+lightning-utilities==0.15.3
+llvmlite==0.46.0
+Markdown==3.10.2
+markdown-it-py==4.2.0
+MarkupSafe==3.0.3
+matplotlib==3.10.9
+mdurl==0.1.2
+ml_collections==1.1.0
+mpmath==1.3.0
+msgpack @ file://[local path omitted]
+mudata==0.3.8
+multidict==6.7.1
+munkres==1.1.4
+narwhals @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_narwhals_1780672242/work
+natsort @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_natsort_1770905275/work
+networkx @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_networkx_1765215107/work
+numba @ file://[local path omitted]
+numcodecs @ file://[local path omitted]
+numpy @ file://[local path omitted]
+opt_einsum==3.4.0
+packaging==26.0
+pandas @ file://[local path omitted]
+patsy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_patsy_1760998269/work
+pillow @ file://[local path omitted]
+propcache==0.5.2
+protobuf==7.35.0
+pydicom @ file:///home/conda/feedstock_root/build_artifacts/pydicom_1773969744227/work
+Pygments==2.20.0
+pykwalify==1.8.0
+pynndescent @ file:///home/conda/feedstock_root/build_artifacts/pynndescent_1734193530377/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyparsing_1769003998/work
+pyradiomics==3.0.1
+pyro-api==0.1.2
+pyro-ppl==1.9.1
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+pytorch-lightning==2.6.5
+pytz @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pytz_1777892201/work
+PyWavelets==1.9.0
+PyYAML @ file://[local path omitted]
+rich==15.0.0
+ruamel.yaml==0.19.1
+scanpy @ file:///home/conda/feedstock_root/build_artifacts/scanpy_1761040974135/work
+scikit-learn @ file://[local path omitted]
+scikit-misc==0.5.2
+scipy @ file://[local path omitted]
+scverse-misc @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_scverse-misc_1776349918/work
+scvi-tools==1.4.2
+seaborn @ file:///home/conda/feedstock_root/build_artifacts/seaborn-split_1733730015268/work
+session-info2 @ file:///home/conda/feedstock_root/build_artifacts/session-info2_1775678237394/work
+simpleitk @ file://[local path omitted]
+six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+sparse==0.18.0
+statsmodels @ file://[local path omitted]
+sympy==1.14.0
+tensorboard==2.20.0
+tensorboard-data-server==0.7.2
+texttable @ file:///home/conda/feedstock_root/build_artifacts/texttable_1734145585512/work
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1741878222898/work
+torch==2.12.0
+torchaudio==2.11.0
+torchmetrics==1.9.0
+torchvision==0.27.0
+tornado @ file://[local path omitted]
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_tqdm_1780692470/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work
+tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1777068919240/work
+umap-learn @ file://[local path omitted]
+unicodedata2 @ file://[local path omitted]
+Werkzeug==3.1.8
+wrapt @ file://[local path omitted]
+xarray==2026.4.0
+yarl==1.24.2
+zarr @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_zarr_1775744500/work

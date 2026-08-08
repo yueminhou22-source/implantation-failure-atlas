@@ -1,0 +1,9 @@
+item	package_path	unit_or_definition	status
+Figure 2 effect source	source_data/final_figure_lock/figure2_effect_definition_lock.tsv	Hedges' g; case minus comparator; matching normal-approximation CI	current
+Figure 2 sample alignment	source_data/final_figure_lock/figure2_sample_alignment_277_records.tsv	277 aligned sample records; within-dataset standardized timing distributions	current
+Figure 4 heatmap source	source_data/final_figure_lock/figure4_heatmap_scale_and_unit_lock.tsv	28 descriptive cells; 119 independent samples; 833 sample-state records	current
+Coverage matched	source_data/verified_sensitivity/verified_original_vs_coverage_matched.tsv	corrected implementation export	current
+Disease meta-analysis	source_data/verified_sensitivity/meta_*_verified.tsv	REML/Hartung–Knapp supportive summaries	current
+Rank validation	source_data/verified_sensitivity/rank_based_evidence_summary.tsv	secondary rank-based timing sensitivity	current
+Old mixed Figure 2/4 outputs	not included	Cohen d/projected-day mixed intervals and old Figure 4 inferential displays	excluded
+Clinical AUC/classifier outputs	not included	no internal clinical prediction analysis	excluded

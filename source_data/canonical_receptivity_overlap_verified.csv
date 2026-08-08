@@ -1,0 +1,13 @@
+gene,category,in_dynamic_genes,in_80_gene_signature
+PAEP,canonical_receptivity_marker,TRUE,FALSE
+GPX3,canonical_receptivity_marker,TRUE,TRUE
+MUC1,canonical_receptivity_marker,FALSE,FALSE
+IGFBP1,canonical_receptivity_marker,TRUE,TRUE
+PRL,canonical_receptivity_marker,FALSE,FALSE
+LEFTY2,canonical_receptivity_marker,FALSE,FALSE
+SPP1,canonical_receptivity_marker,TRUE,FALSE
+HOXA10,canonical_receptivity_marker,FALSE,FALSE
+HOXA11,canonical_receptivity_marker,FALSE,FALSE
+IL15,canonical_receptivity_marker,FALSE,FALSE
+CXCL14,canonical_receptivity_marker,TRUE,FALSE
+DPP4,canonical_receptivity_marker,TRUE,FALSE

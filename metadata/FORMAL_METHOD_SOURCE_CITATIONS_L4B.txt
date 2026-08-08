@@ -1,0 +1,8 @@
+# Formal method-source dependencies
+
+limma [27]
+clusterProfiler [28]
+Gene set enrichment analysis (GSEA) [29]
+Molecular Signatures Database (MSigDB) [30]
+
+These are global reference numbers inherited from the main manuscript; this package does not define an independent bibliography.

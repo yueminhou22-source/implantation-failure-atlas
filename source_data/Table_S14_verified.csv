@@ -1,0 +1,13 @@
+Marker,Representative translational context,"Present in 3,499 dynamic genes",Present in compact 80-gene signature,Interpretation
+PAEP,Secretory-phase and receptivity-associated glandular marker,TRUE,FALSE,"Present in the 3,499-gene timing list but not retained in the compact signature."
+GPX3,Late-secretory antioxidant and receptivity-associated marker,TRUE,TRUE,Retained in the compact transfer signature.
+MUC1,Luminal epithelial adhesion and implantation-associated marker,FALSE,FALSE,"Outside the 3,499-gene Spearman/BH timing list and not retained in the compact signature."
+IGFBP1,Decidualization-associated stromal marker,TRUE,TRUE,Retained in the compact transfer signature.
+PRL,Decidualization-associated stromal marker,FALSE,FALSE,"Outside the 3,499-gene Spearman/BH timing list and not retained in the compact signature."
+LEFTY2,Secretory and implantation-associated regulator,FALSE,FALSE,"Outside the 3,499-gene Spearman/BH timing list and not retained in the compact signature."
+SPP1,Adhesion and implantation-associated epithelial/stromal marker,TRUE,FALSE,"Present in the 3,499-gene timing list but not retained in the compact signature."
+HOXA10,Progesterone-responsive receptivity regulator,FALSE,FALSE,"Outside the 3,499-gene Spearman/BH timing list and not retained in the compact signature."
+HOXA11,Progesterone-responsive receptivity regulator,FALSE,FALSE,"Outside the 3,499-gene Spearman/BH timing list and not retained in the compact signature."
+IL15,Immune-tolerance and uterine NK-associated receptivity marker,FALSE,FALSE,"Outside the 3,499-gene Spearman/BH timing list and not retained in the compact signature."
+CXCL14,Chemokine-linked epithelial receptivity marker,TRUE,FALSE,"Present in the 3,499-gene timing list but not retained in the compact signature."
+DPP4,Stromal differentiation and decidualization-associated marker,TRUE,FALSE,"Present in the 3,499-gene timing list but not retained in the compact signature."
