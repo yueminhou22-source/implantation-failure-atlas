@@ -59,4 +59,10 @@ Department of Obstetrics and Gynecology, The Second Affiliated Hospital of Xi'an
 
 Corresponding author: Yuemin Hou — `18896500386@163.com`.
 
-No repository license has yet been explicitly selected by the author; license selection remains outside this scrub.
+## License
+
+Software code and scripts in this repository are licensed under the MIT License.
+
+Research source tables, metadata, documentation, reports, and other non-software research materials are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+See `LICENSE.md` and the files in `LICENSES/` for details.
