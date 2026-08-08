@@ -51,7 +51,19 @@ Basic inspection should start with `metadata/FINAL_PUBLIC_NUMBERING_CROSSWALK.ts
 
 ## Citation and contact
 
-Please cite the associated manuscript and this release when using these materials. Release version: `1.0.0`. GitHub repository: https://github.com/yueminhou22-source/implantation-failure-atlas. A Zenodo DOI has not yet been created.
+Please cite the associated manuscript and this release when using these materials. Release version: `1.0.0`. GitHub repository: https://github.com/yueminhou22-source/implantation-failure-atlas.
+
+## Archival DOI
+
+The reproducibility materials corresponding to release v1.0.0 are archived on Zenodo.
+
+Version-specific DOI (v1.0.0):
+https://doi.org/10.5281/zenodo.21849398
+
+Concept DOI (all versions):
+https://doi.org/10.5281/zenodo.21849399
+
+For reproducibility of the analyses reported in the associated manuscript, please cite the version-specific DOI.
 
 Authors: Qing Gao; Tingting Zhang; Wei Liu; Tiantian Ji; Dan Zou; Yuemin Hou.
 
