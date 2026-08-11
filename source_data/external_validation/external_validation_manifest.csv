@@ -1,0 +1,5 @@
+dataset,role,biological_n,inference_unit,primary_publication,GEO_accession,main_figure,supplementary_figure,supplementary_table,source_sheet,notes
+GSE234368,independent stage validation,150 samples,sample-level,"Teh et al., Nat Commun 2023 [20]",GSE234368,Figure 7A,S22,S15,EXT_GSE234368_source,Stage 5 n=51; Stage 6 n=66; Stage 7 n=33.
+GSE98386,within-person timing validation,20 women / 40 biopsies,paired woman / paired biopsies,"Suhorutshenko et al., Hum Reprod 2018 [21]",GSE98386,Figure 7B,S23,S15,EXT_GSE98386_source,Paired LH+2/LH+8 rows represented one row per woman.
+GSE180485,additional timing support,36 independent biopsies,biopsy-level,"Lipecki et al., Hum Reprod 2022 [22]",GSE180485,Figure 7C,S24,S15,EXT_GSE180485_source,35 reported LH+ observations included in correlation.
+GSE144895,exploratory outcome-linked assessment,20 patients,patient-level exploratory outcome-linked,"Crosby et al., Hum Reprod 2020 [23]",GSE144895,Figure 7D,S25,S15,EXT_GSE144895_source,No clinical prediction or utility claim.
