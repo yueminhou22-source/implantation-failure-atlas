@@ -3,8 +3,7 @@ message: "If you use these reproducibility materials, please cite the associated
 title: "Reproducibility materials for A cross-disease endometrial omics framework maps heterogeneous timing and context-specific molecular remodeling in implantation-associated disorders"
 type: dataset
 repository-code: https://github.com/yueminhou22-source/implantation-failure-atlas
-version: 1.0.0
-date-released: 2026-08-08
+version: 1.1.0
 authors:
   - family-names: Gao
     given-names: Qing
