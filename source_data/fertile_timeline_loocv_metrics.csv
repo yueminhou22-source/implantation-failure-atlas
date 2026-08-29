@@ -1,5 +1,0 @@
-"metric","value"
-"LOOCV Spearman rho",0.919254719740988
-"LOOCV mean absolute error",0.95729076544069
-"LOOCV exact-stage recovery",0.5
-"LOOCV pairwise stage-order concordance",0.952380952380952

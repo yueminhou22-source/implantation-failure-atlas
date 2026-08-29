@@ -8,8 +8,8 @@ import pandas as pd
 import scanpy as sc
 
 
-ROOT = Path("[local path omitted]")
-HECA_PATH = Path("/Volumes/Extreme SSD/reference_atlas/HECA/h5ad/endometriumAtlasV2_cells_with_counts.h5ad")
+ROOT = Path("path omitted")
+HECA_PATH = Path("path/to/local/external-storage/reference_atlas/HECA/h5ad/endometriumAtlasV2_cells_with_counts.h5ad")
 OUTDIR = ROOT / "analysis" / "05_implantation_failure_atlas" / "heca_reference"
 TABDIR = OUTDIR / "tables"
 
@@ -63,9 +63,9 @@ def normalize_selected(x, n_counts):
 
 
 def main() -> None:
-    os.environ.setdefault("NUMBA_CACHE_DIR", "/tmp/numba_cache")
-    os.environ.setdefault("MPLCONFIGDIR", "/tmp/mplconfig")
-    os.environ.setdefault("XDG_CACHE_HOME", "/tmp/xdg_cache")
+    os.environ.setdefault("NUMBA_CACHE_DIR", "runtime-temp/numba_cache")
+    os.environ.setdefault("MPLCONFIGDIR", "runtime-temp/mplconfig")
+    os.environ.setdefault("XDG_CACHE_HOME", "runtime-temp/xdg_cache")
     TABDIR.mkdir(parents=True, exist_ok=True)
 
     receptivity_sig = pd.read_csv(ROOT / "analysis/03_rif/round5_maximal/tables/receptivity_signature_genes_round5.csv")

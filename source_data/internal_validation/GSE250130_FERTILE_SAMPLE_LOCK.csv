@@ -1,0 +1,19 @@
+"sample","group_simple","day"
+"endometrium, LH3_1, rep1","LH3",3
+"endometrium, LH3_2, rep2","LH3",3
+"endometrium, LH3_3, rep3","LH3",3
+"endometrium, LH5_1, rep1","LH5",5
+"endometrium, LH5_2, rep2","LH5",5
+"endometrium, LH5_3, rep3","LH5",5
+"endometrium, LH7_1, rep1","Fertile_LH7",7
+"endometrium, LH7_2, rep2","Fertile_LH7",7
+"endometrium, LH7_3, rep3","Fertile_LH7",7
+"endometrium, LH7_PGT_1, rep1","Fertile_LH7",7
+"endometrium, LH7_PGT_2, rep2","Fertile_LH7",7
+"endometrium, LH7_PGT_3, rep3","Fertile_LH7",7
+"endometrium, LH9_1, rep1","LH9",9
+"endometrium, LH9_2, rep2","LH9",9
+"endometrium, LH9_3, rep3","LH9",9
+"endometrium, LH11_1, rep1","LH11",11
+"endometrium, LH11_2, rep2","LH11",11
+"endometrium, LH11_3, rep3","LH11",11

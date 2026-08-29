@@ -8,7 +8,7 @@ suppressPackageStartupMessages({
   library(Seurat)
 })
 
-root <- "[local path omitted]"
+root <- "path omitted"
 outdir <- file.path(root, "analysis/05_implantation_failure_atlas/reviewer_stats")
 figdir <- file.path(outdir, "figures")
 tabdir <- file.path(outdir, "tables")
@@ -208,11 +208,11 @@ process_rif <- function() {
     meta_rif$group_simple == "LH11" ~ 11,
     TRUE ~ NA_real_
   )
-  members <- utils::untar("/Volumes/Extreme SSD/03_rif/GSE250130/GSE250130_RAW.tar", list = TRUE)
+  members <- utils::untar("path/to/local/external-storage/03_rif/GSE250130/GSE250130_RAW.tar", list = TRUE)
   member_map <- data.frame(geo_accession = sub("_.*$", "", members), member = members, stringsAsFactors = FALSE)
   meta_rif <- left_join(meta_rif, member_map, by = "geo_accession")
   out <- lapply(seq_len(nrow(meta_rif)), function(i) {
-    mtx <- read_10x_from_nested_tar("/Volumes/Extreme SSD/03_rif/GSE250130/GSE250130_RAW.tar", meta_rif$member[i])
+    mtx <- read_10x_from_nested_tar("path/to/local/external-storage/03_rif/GSE250130/GSE250130_RAW.tar", meta_rif$member[i])
     assign <- assign_cells_heca(mtx, centroid_mat)
     agg <- aggregate_target_counts(mtx, assign, selected_genes)
     agg$sample <- meta_rif$sample[i]
@@ -227,12 +227,12 @@ process_rif <- function() {
 process_endo179640 <- function() {
   meta <- read.csv(file.path(root, "analysis/02_endometriosis/metadata/GSE179640_metadata_round2.csv"), check.names = FALSE)
   meta <- meta %>% filter(!grepl("bulk", supplementary_file_1, ignore.case = TRUE))
-  members <- utils::untar("/Volumes/Extreme SSD/reference_annotations/GSE179640/raw/GSE179640_RAW.tar", list = TRUE)
+  members <- utils::untar("path/to/local/external-storage/reference_annotations/GSE179640/raw/GSE179640_RAW.tar", list = TRUE)
   h5_members <- members[grepl("\\.h5$", members)]
   meta$member <- basename(meta$supplementary_file_1)
   meta <- meta %>% filter(member %in% h5_members)
   out <- lapply(seq_len(nrow(meta)), function(i) {
-    mtx <- read_10x_h5_from_tar("/Volumes/Extreme SSD/reference_annotations/GSE179640/raw/GSE179640_RAW.tar", meta$member[i])
+    mtx <- read_10x_h5_from_tar("path/to/local/external-storage/reference_annotations/GSE179640/raw/GSE179640_RAW.tar", meta$member[i])
     assign <- assign_cells_heca(mtx, centroid_mat)
     agg <- aggregate_target_counts(mtx, assign, selected_genes)
     agg$sample <- meta$geo_accession[i]
@@ -244,19 +244,19 @@ process_endo179640 <- function() {
 }
 
 process_endo214411 <- function() {
-  meta_a <- read_series_meta("/Volumes/Extreme SSD/reference_annotations/GSE214411/metadata/GSE214411-GPL24676_series_matrix.txt.gz")
+  meta_a <- read_series_meta("path/to/local/external-storage/reference_annotations/GSE214411/metadata/GSE214411-GPL24676_series_matrix.txt.gz")
   meta_a$disease <- sub("^disease: ", "", meta_a$c2)
   meta_a$phase <- sub("^cycle phase: ", "", meta_a$c3)
-  meta_b <- read_series_meta("/Volumes/Extreme SSD/reference_annotations/GSE214411/metadata/GSE214411-GPL11154_series_matrix.txt.gz")
+  meta_b <- read_series_meta("path/to/local/external-storage/reference_annotations/GSE214411/metadata/GSE214411-GPL11154_series_matrix.txt.gz")
   meta_b$disease <- "Control"
   meta_b$phase <- NA_character_
   meta <- bind_rows(meta_a, meta_b)
-  members <- utils::untar("/Volumes/Extreme SSD/reference_annotations/GSE214411/raw/GSE214411_RAW.tar", list = TRUE)
+  members <- utils::untar("path/to/local/external-storage/reference_annotations/GSE214411/raw/GSE214411_RAW.tar", list = TRUE)
   stems <- unique(sub("_(features|barcodes|matrix)\\.tsv\\.gz$|_matrix\\.mtx\\.gz$", "", members))
   stem_df <- data.frame(stem = stems, geo_accession = sub("_.*$", "", stems), stringsAsFactors = FALSE)
   meta <- left_join(meta, stem_df, by = "geo_accession")
   out <- lapply(seq_len(nrow(meta)), function(i) {
-    mtx <- read_10x_flat_from_tar("/Volumes/Extreme SSD/reference_annotations/GSE214411/raw/GSE214411_RAW.tar", meta$stem[i])
+    mtx <- read_10x_flat_from_tar("path/to/local/external-storage/reference_annotations/GSE214411/raw/GSE214411_RAW.tar", meta$stem[i])
     assign <- assign_cells_heca(mtx, centroid_mat)
     agg <- aggregate_target_counts(mtx, assign, selected_genes)
     agg$sample <- meta$geo_accession[i]

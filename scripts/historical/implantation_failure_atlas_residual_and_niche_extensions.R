@@ -14,13 +14,13 @@ suppressPackageStartupMessages({
 })
 
 set.seed(123)
-Sys.setenv(HOME = "/private/tmp", XDG_CACHE_HOME = "/private/tmp")
+Sys.setenv(HOME = "runtime-temp", XDG_CACHE_HOME = "runtime-temp")
 
-root <- "[local path omitted]"
+root <- "path omitted"
 outdir <- file.path(root, "analysis/05_implantation_failure_atlas/reviewer_stats")
 figdir <- file.path(outdir, "figures")
 tabdir <- file.path(outdir, "tables")
-msigdb_zip <- "[local path omitted]"
+msigdb_zip <- "path omitted"
 dir.create(figdir, recursive = TRUE, showWarnings = FALSE)
 dir.create(tabdir, recursive = TRUE, showWarnings = FALSE)
 
@@ -580,7 +580,7 @@ gene_level_residual_work[["Endometriosis_GO"]] <- run_gsego_table(stats_endo, "E
 if (!is.null(hallmark_gmt)) hallmark_work[["Endometriosis_H"]] <- run_fgsea_gmt(stats_endo, hallmark_gmt, "Endometriosis residual deviation")
 
 # Adenomyosis representative dataset: GSE244236
-expr244_raw <- as.data.frame(read_excel("/Volumes/Extreme SSD/04_adenomyosis/GSE244236/GSE244236_Normalized_counts.xlsx"))
+expr244_raw <- as.data.frame(read_excel("path/to/local/external-storage/04_adenomyosis/GSE244236/GSE244236_Normalized_counts.xlsx"))
 gene_ids244 <- as.character(expr244_raw[[1]])
 expr244 <- expr244_raw[, -1, drop = FALSE]
 expr244[] <- lapply(expr244, as.numeric)
@@ -713,7 +713,7 @@ program_sets <- list(
 )
 
 spatial_scores <- read.csv(file.path(root, "analysis/03_rif/round5_maximal/tables/GSE287278_spatial_signature_scores_round5.csv"), check.names = FALSE)
-outer_tar <- "/Volumes/Extreme SSD/03_rif/GSE287278/GSE287278_RAW.tar"
+outer_tar <- "path/to/local/external-storage/03_rif/GSE287278/GSE287278_RAW.tar"
 outer_members <- utils::untar(outer_tar, list = TRUE)
 sample_members <- outer_members[grepl("_processed_data\\.tar\\.gz$", outer_members)]
 tmp_outer <- tempfile("gse287278_outer_")

@@ -376,19 +376,19 @@ all_scores[["endo_gse213216"]] <- bind_cols(
 )
 
 # Endometriosis eutopic validation GSE214411
-meta214a <- read_series_meta("/Volumes/Extreme SSD/02_endometriosis/GSE214411/GSE214411-GPL24676_series_matrix.txt.gz")
+meta214a <- read_series_meta("path/to/local/external-storage/02_endometriosis/GSE214411/GSE214411-GPL24676_series_matrix.txt.gz")
 meta214a$disease <- sub("^disease: ", "", meta214a$c2)
 meta214a$phase <- sub("^cycle phase: ", "", meta214a$c3)
-meta214b <- read_series_meta("/Volumes/Extreme SSD/02_endometriosis/GSE214411/GSE214411-GPL11154_series_matrix.txt.gz")
+meta214b <- read_series_meta("path/to/local/external-storage/02_endometriosis/GSE214411/GSE214411-GPL11154_series_matrix.txt.gz")
 meta214b$disease <- "Control"
 meta214b$phase <- NA_character_
 meta214 <- bind_rows(meta214a, meta214b)
-tar_members214 <- utils::untar("/Volumes/Extreme SSD/02_endometriosis/GSE263897/GSE214411_RAW.tar", list = TRUE)
+tar_members214 <- utils::untar("path/to/local/external-storage/02_endometriosis/GSE263897/GSE214411_RAW.tar", list = TRUE)
 member_prefixes214 <- unique(sub("_(features|barcodes|matrix)\\.tsv\\.gz$|_matrix\\.mtx\\.gz$", "", tar_members214))
 member_df214 <- data.frame(member_prefix = member_prefixes214, stringsAsFactors = FALSE)
 member_df214$geo_accession <- sub("_.*$", "", member_df214$member_prefix)
 meta214 <- left_join(meta214, member_df214, by = "geo_accession")
-pb214_list <- lapply(meta214$member_prefix, function(stem) extract_simple_sample_pseudobulk("/Volumes/Extreme SSD/02_endometriosis/GSE263897/GSE214411_RAW.tar", stem))
+pb214_list <- lapply(meta214$member_prefix, function(stem) extract_simple_sample_pseudobulk("path/to/local/external-storage/02_endometriosis/GSE263897/GSE214411_RAW.tar", stem))
 for (i in seq_along(pb214_list)) names(pb214_list[[i]])[2] <- meta214$geo_accession[i]
 pb214 <- Reduce(function(x, y) full_join(x, y, by = "gene"), pb214_list)
 pb214[is.na(pb214)] <- 0
@@ -425,9 +425,9 @@ all_scores[["endo_gse214411"]] <- bind_cols(
 )
 
 # Endometriosis bulk GSE135485
-meta135 <- read_series_meta("/Volumes/Extreme SSD/02_endometriosis/GSE135485/GSE135485_series_matrix.txt.gz")
+meta135 <- read_series_meta("path/to/local/external-storage/02_endometriosis/GSE135485/GSE135485_series_matrix.txt.gz")
 meta135$status <- sub("^subject status: ", "", meta135$c1)
-expr135 <- read.csv(gzfile("/Volumes/Extreme SSD/02_endometriosis/GSE135485/GSE135485_Endometriosis_raw_counts.csv.gz"), check.names = FALSE)
+expr135 <- read.csv(gzfile("path/to/local/external-storage/02_endometriosis/GSE135485/GSE135485_Endometriosis_raw_counts.csv.gz"), check.names = FALSE)
 names(expr135)[1] <- "gene"
 expr135 <- expr135 %>% group_by(gene) %>% summarise(across(everything(), ~ sum(.x, na.rm = TRUE)), .groups = "drop")
 expr135_mat <- as.data.frame(expr135)
@@ -462,12 +462,12 @@ all_scores[["endo_gse135485"]] <- bind_cols(
 )
 
 # Endometriosis spatial GSE263897
-meta263 <- read_series_meta("/Volumes/Extreme SSD/02_endometriosis/GSE263897/GSE263897_series_matrix.txt.gz")
+meta263 <- read_series_meta("path/to/local/external-storage/02_endometriosis/GSE263897/GSE263897_series_matrix.txt.gz")
 meta263$tissue <- sub("^tissue: ", "", meta263$c1)
 meta263$sample_id <- sub("^sampleID: ", "", meta263$c2)
 meta263$cell_type <- sub("^cell type: ", "", meta263$c3)
-geomx_long <- parse_geomx_counts("/Volumes/Extreme SSD/02_endometriosis/GSE263897/GSE263897_RAW.tar",
-                                 "/Volumes/Extreme SSD/02_endometriosis/GSE263897/GSE263897_Hs_R_NGS_WTA_v1.0.pkc.gz")
+geomx_long <- parse_geomx_counts("path/to/local/external-storage/02_endometriosis/GSE263897/GSE263897_RAW.tar",
+                                 "path/to/local/external-storage/02_endometriosis/GSE263897/GSE263897_Hs_R_NGS_WTA_v1.0.pkc.gz")
 geomx_mat <- geomx_long %>% pivot_wider(names_from = sample, values_from = value)
 geomx_mat <- as.data.frame(geomx_mat)
 rownames(geomx_mat) <- geomx_mat$gene
@@ -503,7 +503,7 @@ all_scores[["endo_gse263897"]] <- bind_cols(
 )
 
 # Adenomyosis organoid discovery
-expr244_raw <- as.data.frame(read_excel("/Volumes/Extreme SSD/04_adenomyosis/GSE244236/GSE244236_Normalized_counts.xlsx"))
+expr244_raw <- as.data.frame(read_excel("path/to/local/external-storage/04_adenomyosis/GSE244236/GSE244236_Normalized_counts.xlsx"))
 gene_ids244 <- as.character(expr244_raw[[1]])
 expr244 <- expr244_raw[, -1, drop = FALSE]
 expr244[] <- lapply(expr244, as.numeric)
@@ -553,7 +553,7 @@ all_scores[["adeno_gse244236"]] <- bind_cols(
 )
 
 # Adenomyosis tissue GSE190580
-expr190 <- as.data.frame(read_excel("/Volumes/Extreme SSD/04_adenomyosis/GSE190580/GSE190580_Raw_count_data.xlsx", sheet = "Gene_COUNTS"))
+expr190 <- as.data.frame(read_excel("path/to/local/external-storage/04_adenomyosis/GSE190580/GSE190580_Raw_count_data.xlsx", sheet = "Gene_COUNTS"))
 names(expr190)[1] <- "ensembl"
 expr190$symbol <- AnnotationDbi::mapIds(org.Hs.eg.db, keys = expr190$ensembl, keytype = "ENSEMBL", column = "SYMBOL", multiVals = "first")
 expr190 <- expr190 %>% filter(!is.na(symbol), symbol != "") %>% dplyr::select(-ensembl) %>% group_by(symbol) %>% summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)), .groups = "drop")
@@ -593,7 +593,7 @@ all_scores[["adeno_gse190580"]] <- bind_cols(
 )
 
 # Adenomyosis stromal GSE157718
-expr157 <- read.delim(gzfile("/Volumes/Extreme SSD/04_adenomyosis/GSE157718/GSE157718_gene_tpm_matrix.txt.gz"), check.names = FALSE)
+expr157 <- read.delim(gzfile("path/to/local/external-storage/04_adenomyosis/GSE157718/GSE157718_gene_tpm_matrix.txt.gz"), check.names = FALSE)
 names(expr157)[1] <- "ensembl"
 expr157$symbol <- AnnotationDbi::mapIds(org.Hs.eg.db, keys = expr157$ensembl, keytype = "ENSEMBL", column = "SYMBOL", multiVals = "first")
 expr157 <- expr157 %>% filter(!is.na(symbol), symbol != "") %>% dplyr::select(-ensembl) %>% group_by(symbol) %>% summarise(across(where(is.numeric), ~ mean(.x, na.rm = TRUE)), .groups = "drop")
@@ -630,7 +630,7 @@ all_scores[["adeno_gse157718"]] <- bind_cols(
 )
 
 # Adenomyosis whole tissue GSE78851
-gse788 <- read_series_matrix("/Volumes/Extreme SSD/04_adenomyosis/GSE78851/GSE78851_series_matrix.txt.gz")
+gse788 <- read_series_matrix("path/to/local/external-storage/04_adenomyosis/GSE78851/GSE78851_series_matrix.txt.gz")
 expr788 <- gse788$expr
 names(expr788)[1] <- "probe_id"
 expr788$symbol <- AnnotationDbi::mapIds(hugene10sttranscriptcluster.db, keys = as.character(expr788$probe_id), keytype = "PROBEID", column = "SYMBOL", multiVals = "first")

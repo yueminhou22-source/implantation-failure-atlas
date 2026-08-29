@@ -7,8 +7,12 @@ ROOT = Path(__file__).resolve().parents[1]
 NEEDED = [
     "source_data/fertile_day_spearman_round5.csv",
     "source_data/receptivity_signature_genes_round5.csv",
-    "source_data/fertile_timeline_negative_controls.csv",
-    "source_data/fertile_timeline_negative_control_summary_verified.csv",
+    "source_data/internal_validation/corrected_primary_loocv_predictions.csv",
+    "source_data/internal_validation/corrected_primary_loocv_summary.csv",
+    "source_data/internal_validation/corrected_random80_null_metrics.csv",
+    "source_data/internal_validation/corrected_permutedLH_null_metrics.csv",
+    "source_data/internal_validation/corrected_low_association_null_metrics.csv",
+    "source_data/internal_validation/corrected_negative_control_summary.csv",
     "source_data/heca_mapping_quality_heatmap_values.csv",
 ]
 missing = [item for item in NEEDED if not (ROOT / item).exists()]

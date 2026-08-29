@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 
 set.seed(123)
 
-root <- "[local path omitted]"
+root <- "path omitted"
 outdir <- file.path(root, "analysis/05_implantation_failure_atlas/reviewer_stats")
 figdir <- file.path(outdir, "figures")
 tabdir <- file.path(outdir, "tables")

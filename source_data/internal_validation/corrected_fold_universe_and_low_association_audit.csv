@@ -1,0 +1,19 @@
+"fold","held_out_sample","training_n","training_gene_universe_n","strict_pool_n","fallback_used","fallback_pool_n"
+1,"endometrium, LH3_1, rep1",17,27934,5011,FALSE,0
+2,"endometrium, LH3_2, rep2",17,27948,5042,FALSE,0
+3,"endometrium, LH3_3, rep3",17,28082,5114,FALSE,0
+4,"endometrium, LH5_1, rep1",17,28123,5078,FALSE,0
+5,"endometrium, LH5_2, rep2",17,28138,5107,FALSE,0
+6,"endometrium, LH5_3, rep3",17,28100,5077,FALSE,0
+7,"endometrium, LH7_1, rep1",17,27256,5034,FALSE,0
+8,"endometrium, LH7_2, rep2",17,27246,5060,FALSE,0
+9,"endometrium, LH7_3, rep3",17,27173,4990,FALSE,0
+10,"endometrium, LH7_PGT_1, rep1",17,27202,5019,FALSE,0
+11,"endometrium, LH7_PGT_2, rep2",17,27261,5066,FALSE,0
+12,"endometrium, LH7_PGT_3, rep3",17,27376,5110,FALSE,0
+13,"endometrium, LH9_1, rep1",17,28012,5126,FALSE,0
+14,"endometrium, LH9_2, rep2",17,28123,5195,FALSE,0
+15,"endometrium, LH9_3, rep3",17,28104,5113,FALSE,0
+16,"endometrium, LH11_1, rep1",17,27793,5150,FALSE,0
+17,"endometrium, LH11_2, rep2",17,28015,5075,FALSE,0
+18,"endometrium, LH11_3, rep3",17,28128,5136,FALSE,0
